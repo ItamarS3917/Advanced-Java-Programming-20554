@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="719.0" style="-fx-background-color: #d8ffdf;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maman14q2.CalenderController">
+    <children>
+        <GridPane fx:id="table" layoutX="29.0" layoutY="144.0" prefHeight="280.0" prefWidth="597.0" style="-fx-background-color: #d8ffdf;">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            <rowConstraints>
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+        <Label contentDisplay="BOTTOM" layoutX="36.0" layoutY="47.0" prefHeight="27.0" prefWidth="189.0" text="Month" textFill="#646464">
+            <font>
+                <Font name="Heiti TC Light" size="19.0" />
+            </font>
+        </Label>
+        <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="176.0" layoutY="14.0" prefHeight="59.0" prefWidth="285.0" text="CALENDER" textAlignment="CENTER" textFill="#646464">
+            <font>
+                <Font name="Heiti TC Medium" size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="252.0" layoutY="47.0" prefHeight="24.0" prefWidth="133.0" text="Year" textFill="#646464">
+            <font>
+                <Font name="Heiti TC Light" size="19.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="month" layoutX="36.0" layoutY="74.0" onAction="#monthC" prefWidth="150.0" style="-fx-background-color: #b2ffbf;" />
+        <ComboBox fx:id="year" layoutX="244.0" layoutY="74.0" onAction="#yearC" prefWidth="150.0" style="-fx-background-color: #b2ffbf;" />
+        <Text fill="#646464" layoutX="20.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please add your memos " wrappingWidth="395.5">
+            <font>
+                <Font name="Heiti TC Medium" size="13.0" />
+            </font>
+        </Text>
+        <Button layoutX="255.0" layoutY="654.0" mnemonicParsing="false" onAction="#saveData" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #b2ffbf;" text="Save" textFill="#646464">
+            <font>
+                <Font name="Heiti TC Light" size="17.0" />
+            </font>
+        </Button>
+        <HBox layoutX="40.0" layoutY="124.0" prefHeight="27.0" prefWidth="581.0" spacing="25.0">
+            <children>
+                <Label text="SUNDAY" textFill="#646464">
+                    <font>
+                        <Font name="Heiti TC Light" size="13.0" />
+                    </font>
+                </Label>
+                <Label text="MONDAY" textFill="#646464">
+                    <font>
+                        <Font name="Heiti TC Light" size="13.0" />
+                    </font>
+                </Label>
+                <Label text="TUESDAY" textFill="#646464">
+                    <font>
+                        <Font name="Heiti TC Light" size="13.0" />
+                    </font>
+                </Label>
+                <Label text="WEDNESDAY" textFill="#646464">
+                    <font>
+                        <Font name="Heiti TC Light" size="13.0" />
+                    </font>
+                </Label>
+                <Label text="THURSDAY" textFill="#646464">
+                    <font>
+                        <Font name="Heiti TC Light" size="13.0" />
+                    </font>
+                </Label>
+                <Label text="FRIDAY" textFill="#646464">
+                    <font>
+                        <Font name="Heiti TC Light" size="13.0" />
+                    </font>
+                </Label>
+                <Label text="SATURDAY" textFill="#646464">
+                    <font>
+                        <Font name="Heiti TC Light" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <TextArea fx:id="notes" layoutX="15.0" layoutY="477.0" prefHeight="161.0" prefWidth="610.0" style="-fx-background-color: teal;">
+            <font>
+                <Font name="Heiti TC Light" size="16.0" />
+            </font>
+        </TextArea>
+    </children>
+</AnchorPane>
