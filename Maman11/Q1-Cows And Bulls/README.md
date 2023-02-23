@@ -1,4 +1,4 @@
-![alt text](https://repository-images.githubusercontent.com/558048734/9675e878-71d3-4328-9108-5658ed0e69de)
+<img src="https://repository-images.githubusercontent.com/558048734/9675e878-71d3-4328-9108-5658ed0e69de" width="500" height="350"/>
 
 # Bulls and Cows
 This project is a simple implementation of the Bulls and Cows game. The game generates a 4-digit number, and the player must guess this number. After each guess, the game provides feedback to the player about the number of bulls and cows in their guess. A "bull" means that the player has guessed a digit that is both in the correct position and value in the target number. A "cow" means that the player has guessed a digit that is in the target number, but not in the correct position.
